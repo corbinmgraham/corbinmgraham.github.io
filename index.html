@@ -2,14 +2,89 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="-1">
 <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+
 <style>
-    .icon {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+    html {
+        background: rgb(191, 239, 255);
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    header {
+        margin-top: 20%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: black;
+
+        position: sticky;
+        background-position: center;
+
+        font-size: 500%;
+        text-align: left;
+
+        display: grid;
+        grid-template-columns: 80% 20%;
+        max-width: 81%;
+    }
+    
+    footer {
+        margin-top: 20%;
+        margin-left: 40%;
+        margin-bottom: 0px;
+    }
+    .desc {
+        font-size: 90%;
+        line-height: 90%;
+        color: grey;
+        break-inside: avoid;
+    }
+    #links {
+        z-index: 100;
+        line-height: 90%;
+        max-width: min-content;
+        min-width:fit-content;
+        background: white;
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: 10%;
+        margin-left: 20%;
+
+        display: grid;
+        grid-template-columns: 2;
+    }
+
+    .icon, .icon:visited {
+        width: 64px;
+        float: center;
+        padding-left: 1%;
+        padding-right: 1%;
+
+        text-decoration: none;
+        border: none;
+    }
+    .icon:hover {
+        transform: scale(1.2);
     }
 </style>
-<img class="icon" src="src/img/icon.png">
-<h4>Coming Soon.</h4>
-<h6>(c) Corbin Graham 2022</h6>
+
+<html>
+    <header>
+        <div>
+            Corbin M. Graham <br> <div class="desc">CS @ ISU</div>
+        </div>
+        
+        <div id="links">
+            <a href="https://github.com/corbinmgraham">
+                <img alt="GitHub" class="icon" src="src/img/github_icon.png">
+            </a>
+            <a href="https://www.linkedin.com/in/corbinmgraham/">
+                <img alt="LinkedIn" class="icon" src="src/img/linkedin_icon.png">
+            </a>
+        </div>
+        
+    </header>
+    <body>
+        
+    </body>
+    <footer>
+        <h4>(c) Corbin Graham 2022</h4>
+    </footer>
+</html>
