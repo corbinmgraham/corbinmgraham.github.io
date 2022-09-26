@@ -1,92 +1,114 @@
 <!DOCTYPE HTML>
-<style>
-    html {
-        background: rgb(191, 239, 255);
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    header {
-        margin-top: 20%;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        color: black;
-
-        position: sticky;
-        background-position: center;
-
-        font-size: 500%;
-        text-align: left;
-
-        display: grid;
-        grid-template-columns: 20% 80%;
-    }
-    
-    footer {
-        margin-top: 20%;
-        margin-left: 40%;
-        margin-bottom: 0px;
-    }
-    .title {
-        margin-left: 10%;
-    }
-    .desc {
-        font-size: 90%;
-        line-height: 90%;
-        color: grey;
-        break-inside: avoid;
-    }
-    #links {
-        z-index: 100;
-        line-height: 90%;
-        max-width: min-content;
-        min-width:fit-content;
-        background: white;
-        padding: 10px;
-        border-radius: 20px;
-        margin-top: 10%;
-        margin-left: 20%;
-        margin-right: 20%;
-
-        display: grid;
-        grid-template-columns: 2;
-    }
-
-    .icon, .icon:visited {
-        width: 64px;
-        float: center;
-        padding-left: 1%;
-        padding-right: 1%;
-
-        text-decoration: none;
-        border: none;
-    }
-    .icon:hover {
-        transform: scale(1.2);
-    }
-</style>
-
-<html>
+<!DOCTYPE html>
+<html> 
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+        <title>Corbin Graham</title>
+        <style>
+            body {
+                background: rgb(191, 239, 255);
+                text-align: center;
+                height: 100%;
+                margin: 0px;
+                padding: 0px;
+            }
+            header {
+                margin-top: 10%;
+                text-align: center;
+                font-family: 'Archivo';
+            }
+            nav {
+                text-align: center;
+                border: none;
+                background: white;
+                border-radius: 10px;
+                height: 74px;
+                width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+                display: inline-block;
+                padding-left: 2px;
+                padding-right: 2px;
+            }
+            footer {
+                margin-bottom: 0px;
+                bottom: 0;
+            }
+            h1 {
+                font-size: 60px;
+                margin: 0px;
+            }
+            h2 {
+                font-size: 40px;
+                margin: -10px;
+            }
+            h3 {
+                font-size: 30px;
+                margin: 0px;
+            }
+            a {
+                text-decoration: none;
+                border: none;
+                text-anchor: bottom;
+                object-fit: cover;
+            }
+            img {
+                width: 64px;
+                border-radius: 10px;
+                object-fit: cover;
+                padding-top: 4px;
+                padding-left: 2px;
+                padding-right: 2px;
+            }
+            img:hover {
+                transform: scale(1.15);
+            }
+        </style>
     </head>
-    <header>
-        <div id="links">
-            <a href="https://github.com/corbinmgraham">
-                <img alt="GitHub" class="icon" src="src/img/github_icon.png">
-            </a>
-            <a href="https://www.linkedin.com/in/corbinmgraham/">
-                <img alt="LinkedIn" class="icon" src="src/img/linkedin_icon.png">
-            </a>
-        </div>
-        <div class="title">
-            Corbin M. Graham
-            <br><div class="desc">CS @ ISU</div>
-        </div>
-    </header>
     <body>
-        
+        <header>
+            <h2>Corbin M.</h2>
+            <h1>Graham</h1>
+            <h3>CS @ ISU</h3>
+        </header>
+        <nav>
+            <a href="https://github.com/corbinmgraham"
+                title="GitHub">
+                <img alt="GitHub" src="src/img/github_icon.png">
+            </a>
+            <a href="https://www.linkedin.com/in/corbinmgraham/"
+                title="LinkedIn">
+                <img alt="LinkedIn" src="src/img/linkedin_icon.png">
+            </a>
+        </nav>
+        <nav>
+            <a href="https://github.com/corbinmgraham/text"
+                title="Text.">
+                <img alt="Text." src="src/img/TB.png">
+            </a>
+            <a href="https://www.linkedin.com/in/corbinmgraham/"
+                title="LinkedIn">
+                <img alt="LinkedIn" src="src/img/linkedin_icon.png">
+            </a>
+            <a href="https://www.linkedin.com/in/corbinmgraham/"
+                title="LinkedIn">
+                <img alt="LinkedIn" src="src/img/linkedin_icon.png">
+            </a>
+            <a href="https://www.linkedin.com/in/corbinmgraham/"
+                title="LinkedIn">
+                <img alt="LinkedIn" src="src/img/linkedin_icon.png">
+            </a>
+            <a href="https://www.linkedin.com/in/corbinmgraham/"
+                title="LinkedIn">
+                <img alt="LinkedIn" src="src/img/linkedin_icon.png">
+            </a>
+        </nav>
+
+        <footer>
+            <h4>(c) Corbin Graham 2022</h4>
+        </footer>
     </body>
-    <footer>
-        <h4>(c) Corbin Graham 2022</h4>
-    </footer>
 </html>
