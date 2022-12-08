@@ -6,49 +6,128 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
         <link rel="stylesheet" href="src/style.css">
+        <script src="https://kit.fontawesome.com/2fe0b692f7.js" crossorigin="anonymous"></script>
         <script src="src/script.js"></script>
         <title>Corbin ML</title>
     </head>
-    <body onload="start_app()">
+    <body onload="start_app()" onscroll="deep_scroll()">
         <nav>
-            <ul class="topnav">
-                <li><a onclick="load_page('home')">
-                    Corbin ML</a></li>
+            <div class="nav-content hi" id="mobile-nav">
+                <!-- Mobile Bar -->
+            </div>
+            <div class="nav-content">
+                <ul class="topnav">
+                    <li class="prime_sp"><a onclick="load_page('home')">
 
-                <li class="right"><a onclick="load_page('about')" title="About">
-                    <!-- <img class="ico" src="src/img/??.png"> -->
-                    About</a></li>
-                <li class="right"><a onclick="load_page('projects')" title="Projects">
-                    <!-- <img class="ico" src="src/img/??.png"> -->
-                    Projects</a></li>
-                <li class="right"><a onclick="load_page('papers')" title="Ethics">
-                    <!-- <img class="ico" src="src/img/??.png"> -->
-                    Ethics</a></li>
-                <li class="right"><a onclick="load_page('cloud')" title="Cloud">
-                    <!-- <img class="ico" src="src/img/??.png"> -->
-                    Cloud</a></li>
-                <li class="right"><a onclick="load_page('ml')" title="AI/ML">
-                    <!-- <img class="ico" src="src/img/??.png"> -->
-                    AI / ML</a></li>
-              </ul>
+                        <div class="prime_p">
+                            <!-- <div class="prime_c"></div> -->
+                            <img class="ico supa prime" src="src/img/icon.png">
+                        </div>
+                        
+                        <!-- Corbin ML -->
+                    </a></li>
+    
+                    <li><a onclick="load_page('ml')" title="Artificial Intelligence">
+                        <i class="fa-solid fa-brain fa-lg"></i>
+                        Artificial Intelligence
+                    </a></li>
+                    
+                    <li><a onclick="load_page('crypto')" title="Cryptography">
+                        <i class="fa-solid fa-fingerprint fa-lg"></i>
+                        Cryptography
+                    </a></li>
+                    <li><a onclick="load_page('cloud')" title="Cloud">
+                        <i class="fa-solid fa-cloud fa-lg"></i>
+                        Cloud
+                    </a></li>
+                    <li><a onclick="load_page('papers')" title="Ethics">
+                        <i class="fa-solid fa-people-group fa-lg"></i>
+                        Ethics
+                    </a></li>
+                    <li><a onclick="load_page('projects')" title="Projects">
+                        <i class="fa-solid fa-code fa-lg"></i>
+                        Projects
+                    </a></li>
+                    <li><a onclick="load_page('about')" title="About">
+                        <!-- fa-xl fa-lg -->
+                        <i class="fa-solid fa-circle-info fa-lg"></i>
+                        About
+                    </a></li>
+                    <li><a onclick="nav_more()" title="More">
+                        <!-- fa-xl fa -->
+                        <i id="more-icon" class="fa-solid fa-angle-down"></i>
+                        More
+                    </a></li>
+                </ul>
+            </div>
+            <div class="nav-content hi" id="more-nav">
+                <ul class="topnav more">
+                    <li>
+                        <a href="https://firststepdevelopment.github.io/firststep/"
+                            title="firststep">
+                            <img class="info" alt="firststep" src="./src/img/firststep_icon.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/corbinmgraham"
+                            title="GitHub">
+                            <img class="info" alt="GitHub" src="./src/img/github_icon.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/corbinmgraham/"
+                            title="LinkedIn">
+                            <img class="info" alt="LinkedIn" src="./src/img/linkedin_icon.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/corbinmgraham/doggymatch"
+                            title="DoggyMatch">
+                            <img class="info" alt="DoggyMatch" src="./src/img/DoggyMatch_Icon_128.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/corbinmgraham/text"
+                            title="Text.">
+                            <img class="info" alt="Text." src="./src/img/text.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/corbinmgraham/pvp-pokemon"
+                            title="PVP-Pokemon">
+                            <img class="info" alt="PVP-Pokemon" src="./src/img/PVP-Pokemon.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/corbinmgraham/connect"
+                            title="Connect.">
+                            <img class="info" alt="Connect." src="./src/img/connect.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/corbinmgraham/hackers"
+                            title="HackerS">
+                            <img class="info" alt="HackerS" src="./src/img/hackers.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <header>
-            <h1>
-                <code id="page_title" style="visibility: hidden;">Hello World.</code>
-                <br>
-                Undergoing Maintenance.
+            <!-- <h1>
+                Welcome,
             </h1>
             <h2>
-                Come back soon to see the full site.
-            </h2>
+                to Corbin ML
+            </h2> -->
         </header>
-        <div id="browse"></div>
+        <div id="browse" onscroll="deep_scroll()"></div>
         <footer>
-            <h4>© Corbin Graham 2022</h4>
+            <h4>&copy; Corbin Graham 2022</h4>
             <img class="ico supa" src="src/img/icon.png">
         </footer>
-        <footer id="bot">
+        <!-- <footer id="bot">
             <marquee id="bottom_st"></marquee>
-        </footer>
+        </footer> -->
     </body>
 </html>
