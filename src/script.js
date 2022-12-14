@@ -1,8 +1,18 @@
 var more_links = false;
 
 function start_app() {
-    load_page("home");
+    const addr = window.location.href;
+    if (addr.includes('?')) {
+        set_addr( addr.split('?')[1]);
+    }
+    else load_page("home");
+    console.log(window.location.href)
+    // load_page("home");
     // marquee_func();
+}
+function set_addr(loc) {
+    
+    // load_page("loc")
 }
 // function marquee_func() {
 //     const st = document.getElementById("bottom_st");
@@ -32,7 +42,8 @@ function get_file(f) {
 
     return f;
 }
-function load_page(page=null) {
+
+function set_addr(page=null) {
     const browser = get_browser();
     const file = get_file(page);
     x = 1000;
@@ -41,6 +52,11 @@ function load_page(page=null) {
     // change_title(page);
     more_links = true;
     nav_more();
+}
+function load_page(page=null) {
+    if (!page) return;
+    const addr = window.location.href
+    window.location.href = addr.split('?')[0] + '?' + page;
 }
 function nav_more() {
     const n = document.getElementById("more-nav");
