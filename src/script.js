@@ -6,8 +6,6 @@ function start_app() {
         set_addr( addr.split('?')[1]);
     }
     else load_page("home");
-    console.log(window.location.href)
-    // load_page("home");
     // marquee_func();
 }
 function set_addr(loc) {
@@ -51,6 +49,7 @@ function set_addr(page=null) {
     browser.innerHTML = file;
     // change_title(page);
     more_links = true;
+    custom_bg(page);
     nav_more();
 }
 function load_page(page=null) {
@@ -72,4 +71,9 @@ function nav_more() {
         n.style.height = "auto";
         more_links = true;
     }
+}
+function custom_bg(page)
+{
+    const body = document.querySelector("body");
+    // if(page === "ml") body.style.background = "white";
 }
