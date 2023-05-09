@@ -1,3 +1,207 @@
-<h1>Cryptography</h1>
-<h2>See github for more.</h2>
-<h3>Click "More" > "GitHub"</h3>
+<style>
+    body {
+        margin: 1% 8%;
+        display: block;
+        background: black;
+    }
+    div .item-box {
+        background: white;
+        /* color: white; */
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+
+        opacity: 1;
+        transition: 0.5s ease all;
+        box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.11);
+
+    } div .item-box:hover {
+        transform: scale(1.01);
+    }
+    h1 {
+        text-align: center;
+        color: white;
+    }
+    td h1 {
+        margin-bottom: 0;
+    }
+    td h3 {
+        margin-top: 0;
+    }
+    h2 {
+        /* background: wheat; */
+        background: rgba(156,27,27,1);
+        color: white;
+        /* background: linear-gradient(90deg, rgba(255,237,237,0.6427739971346704) 25%, rgba(156,27,27,1) 75%); */
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 0;
+    }
+    h3 {
+        border-bottom: 2px solid black;
+        /* padding: 2px;
+        padding-left: 0; */
+    }
+    h4 {
+        margin-bottom: -8px;
+    }
+    img {
+        
+    } .profile-img {
+        width: 128px;
+        height: 128px;
+        float: left;
+        margin: 10px;
+        border: 2px solid transparent;
+        border-radius: 90px;
+        background: linear-gradient(
+           90deg, rgb(0,0,0) 15%, rgb(256,0,0) 35%, rgb(256,0,0) 45%, rgb(0,0,0) 100% );
+        /* background-image: url("../img/icon.png"); */
+        background-size: cover;
+        box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.39);
+
+        color: white;
+        text-align: center;
+    } .icon-img {
+        width: 16px;
+        text-align: center;
+        padding-left: 10px;
+        padding-top: 2px;
+        color: black;
+    } .header-link {
+        color: black;
+        text-decoration: none;
+    }
+    p {
+        /* border: 2px solid black; */
+        margin: 10px 0;
+    }
+    i:hover {
+        transform: scale(1.1);
+    }
+</style>
+<head>
+    <script src="https://kit.fontawesome.com/2fe0b692f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Encryption & Cryptographic Concepts</h1>
+    <div class="begin">
+        <div>
+            <h2>Networking Encryption</h2>
+            <div class="item-box">
+                <a href="https://github.com/corbinmgraham/checkers-ai" 
+                    class="header-link"
+                    target="_blank" rel="noopener noreferrer">
+                    <h3>
+                        Text, 2022 
+                        <i class="fa-brands fa-github"></i>
+                    </h3>
+                </a>
+                <p>Play this AI in checkers and see if you can beat it.</p>
+                <h4>Description</h4>
+                <p>
+                    This Checkers AI is using decision trees and Alpha-Beta Pruning to adjust its game and counter your moves.
+                    The assessment algorithm is using the measurement of "greatest jump count",
+                    or the total number of possible jumps at any time.
+                    Other measurements are possible but often, the greatest number of jumps will result in the advantage.
+                    All other moves are pruned.  If there are multiple options with the same jump count, Alpha-Beta pruning is used to
+                    assess the best outcome of each option.
+                    <br>
+                    This AI has an excellent runtime due to its Alpha-Beta pruning and measurement algorithm.
+                </p>
+                <h4>Course</h4>
+                <p>COM S 474: Principles of Artificial Intelligence</p>
+                <h4>Languages</h4>
+                <p>Python</p>
+                <a href="https://github.com/corbinmgraham/checkers-ai"
+                    target="_blank" rel="noopener noreferrer">
+                    <p>
+                        View Code
+                    </p>
+                </a>
+            </div>
+            <div class="item-box">
+                <a href="https://github.com/corbinmgraham/intelligent_agent01" 
+                    class="header-link"
+                    target="_blank" rel="noopener noreferrer">
+                    <h3>
+                        Intelligent Agent, 2022 
+                        <i class="fa-brands fa-github"></i>
+                    </h3>
+                </a>
+                <p>An Intelligent Agent which uses multiple algorithms to beat 8-puzzle problems.</p>
+                <h4>Description</h4>
+                <p>
+                    Standard Intelligent Agent for problem solving.
+                    Uses a variety of algorithms to solve 8-puzzle problems.
+                </p>
+                <h4>Course</h4>
+                <p>COM S 474: Principles of Artificial Intelligence</p>
+                <h4>Languages</h4>
+                <p>Python</p>
+                <a href="https://github.com/corbinmgraham/intelligent_agent01"
+                    target="_blank" rel="noopener noreferrer">
+                    <p>
+                        View Code
+                    </p>
+                </a>
+            </div>
+            <div class="item-box">
+                <a href="https://github.com/corbinmgraham/CLAI" 
+                    class="header-link"
+                    target="_blank" rel="noopener noreferrer">
+                    <h3>
+                        CLAI, 2014 
+                        <i class="fa-brands fa-github"></i>
+                    </h3>
+                </a>
+                <p>Centrally Located Artificial Intelligence</p>
+                <h4>Description</h4>
+                <p>
+                    My first attempt with Artificial Intelligence.
+                </p>
+                <h4>Languages</h4>
+                <p>C#</p>
+                <a href="https://github.com/corbinmgraham/CLAI"
+                    target="_blank" rel="noopener noreferrer">
+                    <p>
+                        View Code
+                    </p>
+                </a>
+            </div>
+    </div>
+    <div>
+        <h2>Machine Learning</h2>
+        <div class="item-box">
+            <a href="https://github.com/corbinmgraham/Auto-Grader" 
+                class="header-link"
+                target="_blank" rel="noopener noreferrer">
+                <h3>
+                    Auto-Grader NLP, Ongoing  
+                    <i class="fa-brands fa-github"></i>
+                </h3>
+            </a>
+            <p>Why grade homework yourself?</p>
+            <h4>Description</h4>
+            <p>
+                Have you ever noticed how outdated Scantron scanners and forms are? Or how they are only formatted for one type of assignment? This ease of grading has led the entire education system to ditch the ideas of creativity and allowing students to construct new and creative ideas for an easier way to grade assignments.
+                <br>
+                The Auto-Grader NLP is the solution to this issue. Using modern NLP, and statisitics, it's possible to predict the accuracy of a student's answer in many forms of assignments. This will remove the possibility of bias from the professor or grader of the assignment while also reducing the time it takes to grade assignments.
+            </p>
+            <h4>Influence</h4>
+            <p>
+                This project was influenced by Scantron scanner cards used for grading exams.
+                Their poor usability made test-taking far more difficult than necessary, and I'm sure grading.
+            </p>
+            <h4>Languages</h4>
+            <p>Python</p>
+            <a href="https://github.com/corbinmgraham/Auto-Grader"
+                target="_blank" rel="noopener noreferrer">
+                <p>
+                    View Code
+                </p>
+            </a>
+        </div>
+    </div>
+</body>

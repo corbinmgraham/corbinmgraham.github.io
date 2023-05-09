@@ -76,4 +76,5 @@ function custom_bg(page)
 {
     const body = document.querySelector("body");
     // if(page === "ml") body.style.background = "white";
+    if (page === "crypto") body.style.background = "black";
 }

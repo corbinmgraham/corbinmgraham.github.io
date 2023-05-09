@@ -67,6 +67,10 @@ a img.info {
     width: 36px;
 } */
 
+a {
+    cursor: pointer;
+}
+
 .nav-content {
     margin: 0 auto;
     max-width: 80%;
